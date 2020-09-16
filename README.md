@@ -39,13 +39,14 @@ Primula is based on IBM-PyWren (now [LitHop](https://github.com/lithops-cloud/li
 Installation of Primula in a python environment is straightforward.
 1.  Clone this repository into your python environment.
 2.  Move to our extended IBM-PyWren project's folder 
-    '''
+    ```
     cd pywren-ibm-cloud-shuffle
-    '''
+    ```
 3. Install IBM-PyWren allong with Primula.
-    '''
+     ```
     pip install -e .
-    '''
+    ```
+    
 
 ## Usage
 Primula can be executed both from command line or from a Jupyter Notebook. We provide an example workflow at `examples/primula_example_basic.ipynb`.
