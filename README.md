@@ -40,7 +40,7 @@ Installation of Primula in a python environment is straightforward.
 1.  Clone this repository into your python environment.
 2.  Move to our extended IBM-PyWren project's folder 
     ```
-    cd pywren-ibm-cloud-shuffle
+    cd pywren-ibm-primula
     ```
 3. Install IBM-PyWren allong with Primula.
      ```
