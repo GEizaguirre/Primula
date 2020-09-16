@@ -11,10 +11,7 @@ from pywren_ibm_cloud.sort.phase2 import _create_reducer_args
 
 def sort_async(pw, num_workers_phase1, num_workers_phase2, parser_info_path, parser_info_bucket,
                speculative_map=False, speculative_reduce=False):
-    # Patch asynchronous functions to executor
-    patch_map_asynchronous(pw)
 
-    map_args = _create_mapper_args(int(num_workers_phase1), parser_info_path, parser_info_bucket)
 
     segm_groups = list()
     for i in range(min(num_workers_phase2, MAX_CONCURRENT_WORKERS)):
@@ -22,7 +19,6 @@ def sort_async(pw, num_workers_phase1, num_workers_phase2, parser_info_path, par
     for i in range(num_workers_phase2):
         segm_groups[i % min(num_workers_phase2, MAX_CONCURRENT_WORKERS)]['segms'].append(i)
 
-    reduce_args = _create_reducer_args(segm_groups, parser_info_bucket, parser_info_path)
 
     if speculative_map:
         _partition_into_segments = _partition_into_segments_monitored
@@ -42,5 +38,3 @@ def sort_async(pw, num_workers_phase1, num_workers_phase2, parser_info_path, par
 
     res = pw.get_result(reduce_job, fs=ft, speculative_map=speculative_map, speculative_reduce=speculative_reduce,
                                             reduce_monitor_job=reduce_monitor_job)
-
-    unpatch_map_asynchronous(pw)
