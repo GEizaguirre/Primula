@@ -11,7 +11,7 @@
 * Josep Sampé <josep.sampe@gmail.com>
 * Gil Vernik <gilv@il.ibm.com>
 
-### PyWren-IBM-Cloud shuffle and sort utilities
+### Primula shuffle and sort utilities
 
 * German Telmo Eizaguirre  <germantelmo.eizaguirre@urv.cat>
 
