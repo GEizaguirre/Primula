@@ -53,8 +53,8 @@ Installation of Primula in a python environment is straightforward.
 Primula can be executed both from command line or from a Jupyter Notebook. We provide an example workflow at `examples/primula_example_basic.ipynb`.
 
 ## Authors
-Marc Sánchez-Artigas (Universitat Rovira i Virgili) [marc.sanchez@urv.cat](marc.sanchez@urv.cat)
-Germán T. Eizaguirre (Universitat Rovira i Virgili) [germantelmo.eizaguirre@urv.cat](germantelmo.eizaguirre@urv.cat)
+* Marc Sánchez-Artigas (Universitat Rovira i Virgili) [marc.sanchez@urv.cat](marc.sanchez@urv.cat)
+* Germán T. Eizaguirre (Universitat Rovira i Virgili) [germantelmo.eizaguirre@urv.cat](germantelmo.eizaguirre@urv.cat)
 
 ## Publications
 **Primula: a Practical Shuffle/Sort Operator for Serverless Computing** - ACM/IFIP Middleware 2020
