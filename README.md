@@ -1,8 +1,12 @@
 # Primula
 
 ## What is Primula
+      
 **Primula** is a serverless shuffle operator for general-purpose serverless frameworks. It is built upon the principles of scalability and transparency and it is designed for shuffle-like operations on routine data analysis pipelines.  
 
+<p align="center"> <img src="./images/logo_primula.png"
+      width='225'/></p>
+      
 Primula provides several features for the automatization of shuffle-like workloads, mainly:
 *  Automatic inference of the optimal number of parallel workers for the shuffle operation.
 *  Load-balancing of workers through data sampling.
