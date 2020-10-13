@@ -1,4 +1,5 @@
 # Primula
+
 ## What is Primula
 **Primula** is a serverless shuffle operator for general-purpose serverless frameworks. It is built upon the principles of scalability and transparency and it is designed for shuffle-like operations on routine data analysis pipelines.  
 
@@ -50,6 +51,13 @@ Installation of Primula in a python environment is straightforward.
 
 ## Usage
 Primula can be executed both from command line or from a Jupyter Notebook. We provide an example workflow at `examples/primula_example_basic.ipynb`.
+
+## Authors
+Marc Sánchez-Artigas (Universitat Rovira i Virgili) [marc.sanchez@urv.cat](marc.sanchez@urv.cat)
+Germán T. Eizaguirre (Universitat Rovira i Virgili) [germantelmo.eizaguirre@urv.cat](germantelmo.eizaguirre@urv.cat)
+
+## Publications
+**Primula: a Practical Shuffle/Sort Operator for Serverless Computing** - ACM/IFIP Middleware 2020
 
 ## Acknowledgements
 <img src="./images/europe.png" width="100" height=70/>
